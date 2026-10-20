@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт успешно создан</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #312e81,
+                #6d28d9
+            );
+            background-size: 200% 200%;
+            animation: gradient 10s ease infinite;
+            overflow: hidden;
+        }
+
+        .card {
+            width: min(90%, 600px);
+            padding: 60px 35px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+            animation: appear 1s ease-out;
+        }
+
+        .icon {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            border-radius: 50%;
+            background: rgba(74, 222, 128, 0.15);
+            border: 2px solid #4ade80;
+            box-shadow: 0 0 35px rgba(74, 222, 128, 0.2);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: clamp(30px, 6vw, 46px);
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        h1 span {
+            color: #86efac;
+        }
+
+        p {
+            color: #cbd5e1;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 35px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 12px 22px;
+            border: 1px solid rgba(134, 239, 172, 0.4);
+            border-radius: 50px;
+            color: #86efac;
+            font-size: 14px;
+            background: rgba(74, 222, 128, 0.08);
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+        <div class="icon">✓</div>
+
+        <h1>Сайт <span>успешно создан!</span></h1>
+
+        <p>
+            Поздравляем! Ваш сайт работает и готов к новым возможностям.
+            Это только начало чего-то большого.
+        </p>
+
+        <div class="badge">● Система работает исправно</div>
+
+        <footer>
+            © 2026 · Ваш сайт начинается здесь
+        </footer>
+    </main>
+</body>
+</html>
